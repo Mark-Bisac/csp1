@@ -20,10 +20,10 @@
 
     <!-- ===================HEADER NAVIGATION================== -->
 
-    <div class="header_nav">
+    <div id="header" class="header_nav">
         <div class="main_menu container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo" height="80px" width="auto"></a>
+                <a class="navbar-brand" href="#header"><img src="img/logo.png" alt="logo" height="80px" width="auto"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -31,16 +31,16 @@
                     <div class="mr-auto"></div>
                   <ul class="navbar-nav mr-sm-0">
                     <li class="nav-item active">
-                      <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="#header">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">About</a>
+                      <a class="nav-link" href="#s-about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
+                        <a class="nav-link" href="#s-projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#s-contact">Contact</a>
                     </li>
                   </ul>
                 </div>
@@ -61,9 +61,9 @@
               <h1 class="title-text text-uppercase">I'm Daniel</h1>
               <h4 class="title-text text-uppercase">Full Stack Web Developer</h4>
               <div class="site-button">
-                <div class="d-flex flex-row flex-wrap">
-                  <button type="button" class="btn button primary-button mr-4 text-uppercase">Contact Me</button>
-                  <button type="button" class="btn button secondary-button text-uppercase">Navigate</button>
+                <div class="d-flex flex-row flex-wrap align-items-center">
+                 <a href="#s-contact"><button type="button" class="btn button primary-button mr-4 text-uppercase">Contact Me</button></a>
+                  <a href="#s-about"><button type="button" class="btn button secondary-button text-uppercase">Navigate</button></a>
                 </div>
               </div>
             </div>
@@ -76,7 +76,7 @@
     </main>
 
     <!-- ===================SECTION ABOUT===================== -->
-    <div class="section-about pt-lg-5 pt-4 pr-1 pl-1">
+    <div id="s-about" class="section-about pt-lg-5 pt-4 pr-1 pl-1">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-6 col-sm-12 ">
@@ -114,7 +114,7 @@
     <!-- ================SECTION PROJECTS================= -->
     <div class="section-projects pb-5 pt-5 p-0">
       <div class="container-fluid">
-        <h3 class="text-uppercase text-sm-center  mb-5 project">Projects</h3>
+        <h3 class="text-uppercase text-center mb-5 project">Projects</h3>
         <div class="row">
           <div class="card-deck col-sm-12">
             <div class="card">
@@ -123,7 +123,7 @@
                 <h5 class="card-title text-center">Front-End Development</h5>
                 <p class="card-text text-center">The project contains the web developer portfolio. It contains the bio/about section and the relevant experience of the developer.</p>
                 <div class="buttons text-center pt-3">
-                    <button type="button" class="btn btn-primary">Learn More &rarr;</button>
+                   <a target="_blank" href="https://mark-bisac.github.io/csp1/"><button type="button" class="btn btn-primary">Learn More &rarr;</button></a>
                 </div>
               </div>
             </div>
@@ -133,9 +133,9 @@
                 <h5 class="card-title text-center">Back-End Development</h5>
                 <p class="card-text text-center">The project contains the server side web application logic and integration of the work front-end developers.</p>
                 <div class="buttons text-center pt-3">
-                  <button type="button" class="btn btn-primary">Learn More &rarr;</button>
+                  <button type="button" class="btn btn-danger">Learn More &rarr;</button>
                 </div>
-                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                <p class="card-text text-center pt-1"><small class="text-muted">Not Available Right Now</small></p> 
               </div>
             </div>
             <div class="card">
@@ -144,9 +144,9 @@
                 <h5 class="card-title text-center">Full-Stack Development</h5>
                 <p class="card-text text-center">The project containts the entire computer system of application from the front-end to the back end that connects the two.</p>
                 <div class="buttons text-center pt-2">
-                  <button type="button" class="btn btn-primary">Learn More &rarr;</button>
+                  <button type="button" class="btn btn-danger">Learn More &rarr;</button>
                 </div>
-                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                <p class="card-text text-center pt-1"><small class="text-muted">Not Available Right Now</small></p>
               </div>
             </div>
           </div>
@@ -154,11 +154,11 @@
       </div>
     </div>
 
-    <div class="section-contact pb-md-3">
+    <div id="s-contact" class="section-contact pb-md-3">
       <h3 class="text-center text-uppercase contact">I'm Happy to hear from you</h3>
       <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-6 col-12">
+        <div class="col-lg-6 col-sm-12">
           <form>
               <div class="form-group">
                 <label class="form_label" for="fullName">Full Name</label>
@@ -188,130 +188,75 @@
               </div>
           </form>
         </div>
-        <div>
-        <div class="col-lg-6 col-12 justify-content-center pb-4">
-          <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=958&amp;height=430&amp;hl=en&amp;q=Ilocos Norte&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.bgmi.org/">BGMI</a></div>
-        </div>
-      </div>
+            <div class="col-lg-6 g-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.8660390896493!2d120.98799761541565!3d14.606706080841656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9ff00d52fe3%3A0xbc707a174d2f13b0!2sUniversity%20Tower%20II%2C%20Galicia%20St%2C%20Sampaloc%2C%20Manila%2C%201008%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1623312092766!5m2!1sen!2sph" 
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
       </div>
     </div>
+  </div>
 
 
     
     <footer class="page-footer font-small bg-dark">
-
-          <!-- Footer Links -->
-          <div class="container-fluid">
-
-            <!-- Grid row-->
-            <div class="row text-center d-flex justify-content-center pt-5 mb-3">
-
-              <!-- Grid column -->
-              <div class="col-md-2 mb-3 col-sm-12">
+      <div class="container-fluid">
+        <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+            <div class="col-md-2 mb-3 col-sm-12">
                 <h6 class="text-uppercase font-weight-bold">
-                  <a href="#">About us</a>
+                  <a href="#header">Home</a>
                 </h6>
-              </div>
-              <!-- Grid column -->
-
-              <!-- Grid column -->
-              <div class="col-md-2 mb-3 col-sm-12">
-                <h6 class="text-uppercase font-weight-bold">
-                  <a href="#">Products</a>
-                </h6>
-              </div>
-              <!-- Grid column -->
-
-              <!-- Grid column -->
-              <div class="col-md-2 mb-3 col-sm-12">
-                <h6 class="text-uppercase font-weight-bold">
-                  <a href="#!">Awards</a>
-                </h6>
-              </div>
-              <!-- Grid column -->
-
-              <!-- Grid column -->
-              <div class="col-md-2 mb-3 col-sm-12">
-                <h6 class="text-uppercase font-weight-bold">
-                  <a href="#!">Help</a>
-                </h6>
-              </div>
-              <!-- Grid column -->
-
-              <!-- Grid column -->
-              <div class="col-md-2 mb-3">
-                <h6 class="text-uppercase font-weight-bold">
-                  <a href="#!">Contact</a>
-                </h6>
-              </div>
-              <!-- Grid column -->
-
             </div>
-            <!-- Grid row-->
-
-            <!-- Grid row-->
-            <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
-
-              <!-- Grid column -->
-              <div class="col-md-8 col-12 pt-1 mb-3">
-                <img src="img/logo.png" alt="logo" class="img-fluid">
-              </div>
-              <!-- Grid column -->
-
+             
+            <div class="col-md-2 mb-3 col-sm-12">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#s-about">About</a>
+                </h6>
             </div>
+       
+            <div class="col-md-2 mb-3 col-sm-12">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#s-projects">Project</a>
+                </h6>
+            </div>
+       
+            <div class="col-md-2 mb-3 col-sm-12">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#s-contact">Contacts</a>
+                </h6>
+            </div>
+          </div>
+          
+          <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+            <div class="col-md-8 col-12 pt-1 mb-3">
+              <a href="#header"><img src="img/logo.png" alt="logo" class="img-fluid"></a>  
+            </div>
+          </div>
 
-            <!-- Grid row-->
-            <div class="row pb-3">
-
-              <!-- Grid column -->
-              <div class="col-md-12 text-center">
-
+          <div class="row pb-3">
+            <div class="col-md-12 text-center">
                 <div class="mb-5 flex-center">
-
-                  <!-- Facebook -->
-                  <a class="fb-ic">
+                  <a target="_blank" href="https://web.facebook.com/nathaniel.bisac/" class="fb-ic">
                     <i class="fab fa-facebook-f fa-lg white-text mr-4"> </i>
                   </a>
-                  <!-- Twitter -->
-                  <a class="tw-ic">
-                    <i class="fab fa-twitter fa-lg white-text mr-4"> </i>
-                  </a>
-                  <!-- Google +-->
-                  <a class="gplus-ic">
-                    <i class="fab fa-google-plus-g fa-lg white-text mr-4"> </i>
-                  </a>
-                  <!--Linkedin -->
-                  <a class="li-ic">
+                
+                  <a target="_blank" href="https://www.linkedin.com/in/mark-daniel-bisac-89415b1a5/" class="li-ic">
                     <i class="fab fa-linkedin-in fa-lg white-text mr-4"> </i>
                   </a>
-                  <!--Instagram-->
-                  <a class="ins-ic">
-                    <i class="fab fa-instagram fa-lg white-text mr-4"> </i>
+             
+                  <a target="_blank" href="https://github.com/Mark-Bisac" class="ins-ic">
+                    <i class="fab fa-github fa-lg white-text mr-4"> </i>
                   </a>
-                  <!--Pinterest-->
-                  <a class="pin-ic">
-                    <i class="fab fa-pinterest fa-lg white-text"> </i>
-                  </a>
-
+             
+                 </div>
                 </div>
-
               </div>
-              <!-- Grid column -->
-
             </div>
-            <!-- Grid row-->
+      
+            <div class="footer-copyright text-center bg-primary py-3">© 2021 Copyright:
+              Mark Daniel Bisac
+            </div>
+    </footer>
 
-          </div>
-          <!-- Footer Links -->
-
-          <!-- Copyright -->
-          <div class="footer-copyright text-center bg-primary py-3">© 2021 Copyright:
-             Mark Daniel Bisac
-          </div>
-          <!-- Copyright -->
-
-        </footer>
-        <!-- Footer -->
 
 
      <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
