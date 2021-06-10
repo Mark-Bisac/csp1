@@ -21,7 +21,7 @@
     <!-- ===================HEADER NAVIGATION================== -->
 
     <div class="header_nav">
-        <div class="main_menu">
+        <div class="main_menu container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo" height="80px" width="auto"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,11 +52,14 @@
     </div>
       <!-- ===================END NAVIGATION================== -->
 
+
+      <!-- =====================MAIN SITE====================== -->
+
     <main class="main-site">
       <section class="site-banner">
-        <div class="container">
+        <div class="container-fluid">
           <div class="row">
-            <div class="col-lg-6 col-md-12 site-title text-sm-center order-2 order-md-1">
+            <div class="col-lg-6 col-12 order-2 order-md-1 site-title">
               <h3 class="title-text">Hi!</h3>
               <h1 class="title-text text-uppercase">I'm Daniel</h1>
               <h4 class="title-text text-uppercase">Full Stack Web Developer</h4>
@@ -67,7 +70,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 col-md-12 order-1 order-md-2">
+            <div class="col-lg-6 col-12 order-1 order-md-2">
               <img src="img/banner.png" alt="banner" class="banner-image img-fluid">
             </div>
           </div>
@@ -75,19 +78,30 @@
       </section>
     </main>
 
-    <div class="section-about">
+    <!-- ===================SECTION ABOUT===================== -->
+    <div class="section-about pt-md-5">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-6 col-sm-12">
-            <img src="img/self.png" alt="self-image" width="70%" class="ml-5 img-fluid">
+          <div class="col-md-6 col-sm-12 ">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/front-end.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/Fullstack.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/back-end.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col">
-              <h2 class="text-uppercase pt-5 title">
-                <span>Let me</span>
-                <span>introduce</span>
-                <span>myself</span>
+          <div class="col-md-6 col-sm-12">
+              <h2 class="text-uppercase text-sm-center mt-1 mt-md-5 title-head">
+                  Let me Introduce Myself
               </h2>
-              <div class="paragraph py-4 w-80 text-justify">
+              <div class="paragraph text-justify">
                 <p class="para">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rerum iure obcaecati vel
                   possimus officia maiores perferendis ut! Quos, perspiciatis.
@@ -104,41 +118,43 @@
       </div>
     </div>
 
-
+    <!-- ================SECTION PROJECTS================= -->
     <div class="section-projects pb-5 pt-5">
       <div class="container-fluid">
         <h3 class="text-uppercase text-center mb-5 project">Projects</h3>
-        <div class="card-deck">
-          <div class="card">
-            <img src="img/front-end.jpg" class="card-img-top" alt="frontend">
-            <div class="card-body">
-              <h5 class="card-title text-center">Front-End Development</h5>
-              <p class="card-text text-center">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="buttons text-center pt-3">
-                   <button type="button" class="btn btn-primary">Learn More &rarr;</button>
+        <div class="row">
+          <div class="card-deck col-sm-12">
+            <div class="card">
+              <img src="img/front-end.jpg" class="card-img-top" alt="frontend">
+              <div class="card-body">
+                <h5 class="card-title text-center">Front-End Development</h5>
+                <p class="card-text text-center">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="buttons text-center pt-3">
+                    <button type="button" class="btn btn-primary">Learn More &rarr;</button>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="card">
-            <img src="img/back-end.jpg" class="card-img-top" alt="backend">
-            <div class="card-body">
-              <h5 class="card-title text-center">Back-End Development</h5>
-              <p class="card-text text-center">This card has supporting text below as a natural lead-in to additional content.</p>
-              <div class="buttons text-center pt-3">
-                <button type="button" class="btn btn-primary">Learn More &rarr;</button>
+            <div class="card">
+              <img src="img/back-end.jpg" class="card-img-top" alt="backend">
+              <div class="card-body">
+                <h5 class="card-title text-center">Back-End Development</h5>
+                <p class="card-text text-center">This card has supporting text below as a natural lead-in to additional content.</p>
+                <div class="buttons text-center pt-3">
+                  <button type="button" class="btn btn-primary">Learn More &rarr;</button>
+                </div>
+                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
               </div>
-              <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
             </div>
-          </div>
-          <div class="card">
-            <img src="img/Fullstack.jpg" class="card-img-top" alt="Full-Stack">
-            <div class="card-body">
-              <h5 class="card-title text-center">Full-Stack Development</h5>
-              <p class="card-text text-center">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-              <div class="buttons text-center">
-                <button type="button" class="btn btn-primary">Learn More &rarr;</button>
+            <div class="card">
+              <img src="img/Fullstack.jpg" class="card-img-top" alt="Full-Stack">
+              <div class="card-body">
+                <h5 class="card-title text-center">Full-Stack Development</h5>
+                <p class="card-text text-center">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                <div class="buttons text-center">
+                  <button type="button" class="btn btn-primary">Learn More &rarr;</button>
+                </div>
+                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
               </div>
-              <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
             </div>
           </div>
         </div>

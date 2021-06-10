@@ -144,11 +144,23 @@ html,body
     padding: 5rem 3rem;
 }
 
-.title
+.title-head
 {
-    display: block;
-    font-family: "Roboto", sans-serif;
-    letter-spacing: 21px;
+    text-align: center;
+    font-family: "Roboto",sans-serif;
+    background-image: linear-gradient(to right, #2998ff, #5643fa);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-top: 5rem;
+    transition: all .2s ease;
+}
+
+.title-head:hover
+{
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: .5rem 1rem 2rem rgba(#000, .2);
 }
 
 .para
@@ -180,6 +192,18 @@ html,body
 {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: .5rem 1rem 2rem rgba(#000, .2);
+}
+
+.card
+{
+    background-color: rgba(white,.8);
+    transition: all 0.2s ease;
+}
+
+.card:hover
+{
+    transform: translateY(-1.5rem) scale(1.03);
+    box-shadow:0px 10px 30px rgba(57, 56, 61, 0.205);
 }
 
 /* Contacts */
